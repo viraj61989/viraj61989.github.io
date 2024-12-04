@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Onlyfans Users</title>
+  <style>
+    /* General Styles */
+    body {
+      background-color: #00aff0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    b, p, label {
+      color: #fff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    figure {
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .test-btn {
+      background-color: #0079a9;
+      border: none;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      margin: 10px 0;
+      cursor: pointer;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    input[type=text], select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .loader {
+      border: 16px solid #fff;
+      border-radius: 50%;
+      border-top: 16px solid #00c30f;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+      margin: 20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    a:link, a:visited {
+      background-color: #12c73c;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a:hover, a:active {
+      background-color: green;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .test-btn {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      input[type=text], select {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <figure class="wp-block-image size-large">
+      <img 
+        fetchpriority="high" 
+        decoding="async" 
+        width="1024" 
+        height="216" 
+        src="https://location.modren8.com/wp-content/uploads/2024/04/logo-1024x216.png" 
+        alt="Website Logo" 
+        class="wp-image-29" 
+        srcset="https://location.modren8.com/wp-content/uploads/2024/04/logo-1024x216.png 1024w, https://location.modren8.com/wp-content/uploads/2024/04/logo-300x63.png 300w, https://location.modren8.com/wp-content/uploads/2024/04/logo-768x162.png 768w, https://location.modren8.com/wp-content/uploads/2024/04/logo-1536x323.png 1536w, https://location.modren8.com/wp-content/uploads/2024/04/logo.png 1900w" 
+        sizes="(max-width: 1024px) 100vw, 1024px" />
+    </figure>
+
+    <b>Search Onlyfans Users Online Based on City or Area:</b>
+    <input type="text" id="name" name="firstname" placeholder="Enter City or Area Here">
+    
+    <label for="country">Choose Onlyfans Server Location:</label>
+    <select id="country" name="country">
+      <option value="US">United States</option>
+      <option value="GB">United Kingdom</option>
+      <option value="CA">Canada</option>
+      <option value="AU">Australia</option>
+      <option value="EU">Europe</option>
+      <option value="Asia">Asia</option>
+      <option value="Middle East">Middle East</option>
+      <option value="ARAB">Arab</option>
+    </select>
+
+    <br />
+    <button class="test-btn">Search</button>
+    <p id="test"></p>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelector('button.test-btn').addEventListener('click', () => {
+        document.querySelector('#test').innerHTML = '<div class="loader"></div><h3 style="color: white;">Getting results...</h3>';
+        setTimeout(showResults, 15000);
+      });
+    });
+
+    function showResults() {
+      const country = document.getElementById('country');
+      const resultHTML = `
+        <b>20+ Onlyfans Users In Your Area ✅</b>
+        <p>Server Location: ${country.value}</p>
+        <a href="https://location.modren8.com/results/">Final Step</a>
+      `;
+      document.getElementById('test').innerHTML = resultHTML;
+    }
+  </script>
+</body>
+</html>
